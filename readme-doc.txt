@@ -1,6 +1,3 @@
-
-
-
 =============================================
 Installation Overview
 =============================================
@@ -30,3 +27,8 @@ Make sure you have Node and NPM installed by running simple commands to see what
 01. Test Node. To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type node -v. This should print a version number, so you’ll see something like this v0.10.35.
 
 02.Test NPM. To see if NPM is installed, type npm -v in Terminal. This should print NPM’s version number so you’ll see something like this 1.4.28
+
+=============================================
+Launch FieldCaster!
+=============================================
+
