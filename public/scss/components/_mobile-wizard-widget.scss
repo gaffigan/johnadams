@@ -1,0 +1,179 @@
+.mobleWizardWidget {
+	display: block;
+	position: relative;
+
+	.activeWizardMenuHeader {
+		background-color: #f8f8f8;
+	    height: 65px;
+		left: 0;
+		position: fixed;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		z-index: 4;
+
+		h2 {
+			font-size: 23px;
+			font-weight: normal;
+		}
+		.iconLeft {
+			background-color: transparent;
+			display: block;
+			font-size: 28px;
+			height: 65px;
+			padding-top: 15px;
+			padding-left: 20px;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	.mobilePreview {
+		color:#FFF;
+		padding: 40px 50px;
+		position: relative;
+		z-index: 3;
+
+		h2 {
+			font-size: 36px;
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+		}
+		small {
+			color: #CCC;
+			display: block;
+			font-size: 16px;
+			margin: 0 0 30px 0;
+		}
+		.glyphicon {
+			font-size: 130px;
+			display: block;
+			background-color: transparent;
+			text-align: center;
+			margin: 20px 0;	
+		}
+
+		.lead {
+			font-size: 44px;
+			margin: 0 0 20px 0;
+
+		    .fa-quote-left {
+				font-size: 50%;
+				margin: 0 10px 0 0;
+				position: relative;
+				top: -14px;
+		    }
+		    .fa-quote-right {
+				font-size: 50%;
+				margin: 0 0 0 10px;
+				position: relative;
+				top: -14px;
+		    }
+		}
+
+		.row {
+			margin-right: 0;
+			margin-left: 0;
+
+			.previewDate {
+				background-color: #FFF;
+				border-right: 1px solid #CCCCCC;
+				padding-left: 0px;
+				padding-right: 0px;
+				@include opacity(.8);
+
+				span {
+					color: #686c71;
+					display: block;
+					font-size: 14px;
+					text-align: center;
+				}
+				.titleDate {
+					font-weight: bold;
+					padding-top: 20px;
+				}
+				.dateMonth {}
+				.dateDay {
+					font-size: 70px;
+					line-height: 85px;
+					padding: 0px 0;
+				}
+				.dateYear {
+					color: #b2b2b2;
+				}
+				.dateTime {
+					color: #FFFFFF;
+					padding: 2px 0;
+				}
+				.startTime {
+					background-color: #842569;
+				}
+				.endTime {
+					background-color: #5c3326;
+				}
+				.glyphicon {
+					font-size: 100px;
+					color: #FFF;
+					text-align: center;
+					width: 100%;
+				}
+			}
+		}
+
+		.scheduleThisButton {
+			@include btn;
+			@include btn-falcon;
+		}
+
+		.instructionText {
+			font-size: 14px;
+			margin: 10px 0;
+			text-align: center;  
+		}
+
+	}
+	.previewCoverImageTransparency {
+		background-color: #686c71;
+		height: 1200px;
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		z-index: 1;
+
+		@include opacity(.6);
+		
+	}
+	.previewCoverImage {
+		background: url('http://www.freedomwallpaper.com/nature-wallpaper/nature-hd-wallpapers-road.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		display: block;
+		height: 1200px;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+
+	.previousButton {
+		margin: 1%;
+		width: 98%;
+	}
+	
+	.nextButton {
+		margin: 1%;
+		width: 98%;
+
+		@include btn;
+		@include btn-alpha;
+	}
+}
+@media (min-width: 768px) {
+	.mobleWizardWidget {
+		display: none;
+	}
+}

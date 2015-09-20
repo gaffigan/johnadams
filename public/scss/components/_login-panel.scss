@@ -1,0 +1,79 @@
+
+#loginPanel {
+	@include opacity(0.9);
+
+	.modal-dialog {
+		margin-top: 150px;
+
+		.modal-content {
+			@include border-radius-three;
+
+			.modal-body {
+			    padding: 40px;
+
+			    .passwordContainer {
+			    	position: relative;
+			    	
+				    input {
+					    @include border-radius-three;
+					    @include form-input;
+				    }
+
+				    button {
+					    @include btn-beta;
+				    }
+			    }
+
+			    button {
+				    @include btn-alpha;
+			    }
+			}
+		}
+	}
+}
+
+.blackTransparency {
+	background-color: $black-transparency;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    opacity: .2;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.backgroundImage {
+	background-image: url("../img/login_background_2560x1600.jpg");
+	background-size: cover;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+	.modal-dialog {
+	    width: 500px;
+	    margin: 150px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

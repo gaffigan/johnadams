@@ -1,0 +1,30 @@
+.panelQuickWidget {
+	background-color: transparent;
+	@include border-radius-zero;
+
+	.panel-heading {
+	    background-image: none;
+	    background-color: transparent;
+	    border-bottom: none;
+	    border-top-right-radius: 0;
+	    border-top-left-radius: 0;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	.panel-body {
+	    padding: 0;
+
+	    .carousel {
+	    	height: 325px;
+			position: relative;
+
+			.item {
+				img {
+					height: 325px;
+				}
+			}
+		}
+	}
+
+}

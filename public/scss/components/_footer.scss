@@ -1,0 +1,66 @@
+footer {
+	background-color: #FCFCFC;
+	border-top: 1px solid #E5E5E5;
+	bottom: 0px;
+	left: 0px;
+	@include opacity(0.9);
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+
+	ul {
+		list-style-type: none;
+		margin-bottom: 0px;
+		padding-left: 0;
+
+	    li {
+	    	a {
+				background-color: transparent;
+				color: #595959;
+				display: block;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+
+	    		span[class*="glyphicon"]{
+	    			display: block;
+	    		}
+	    		.glyphicon {
+	    			font-size: 14px;
+	    		}
+	    		.glyphicon-class {
+	    			font-size: 11px;
+	    		}
+	    		.activeIndicator {
+				    border-bottom: 1px solid $primary-color;
+				    border-top: 1px solid #999999;
+				    left: 0;
+				    position: absolute;
+				    width: 100%;
+				    top: -1px;
+	    		}
+	    	}
+	    	a:hover {
+	    		text-decoration: none;
+	    	}
+	    	.active {
+	    		background-color: #E5E5E5;
+	    		color: $primary-color;
+	    	}
+	    }
+
+		.col-md-6 {
+			float: left;
+			padding-left: 0px;
+			padding-right: 0px;
+			width: 50%;
+		}
+
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		display: none;
+	}
+}

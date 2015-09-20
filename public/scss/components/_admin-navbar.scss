@@ -1,0 +1,123 @@
+
+.navbarBrand {
+	.navbar-header {
+		padding-left: 55px;
+	}
+}
+
+.navbarAdmin {
+	display:none;
+}
+
+@media (min-width: 768px) {
+	.navbarAdmin {
+	    background-color: #686C71;
+	    background-image: none;
+	    border: 0px;
+	    border-bottom: none;
+	    border-color: transparent;
+	    display:block;
+	    height: 100%;
+	    left: -220px;
+	    position: fixed;
+	    top: 0;
+	    width: 280px;
+	    z-index: 4;
+
+		@include border-radius-zero;
+		@include transition-property(left);
+		@include transition-duration(.5s);
+		@include transition-timing-function(ease-in);
+
+	    .container-fluid {
+	    	.navbar-header {
+				background-color: #ececec;
+				border-bottom: 1px solid #CCC;
+				margin-left: 0;
+				width: 100%;
+
+				a {
+					img {
+					    margin: 0;
+					}
+				}
+	    	}
+	    	.navbar-collapse {
+		    	margin-top: 40px;
+	    		padding-left: 0px;
+	    		padding-right: 0px;
+
+		    	ul {
+					list-style: none;
+					margin-bottom: 0;
+					margin-top: 20px;
+					padding: 0;
+
+					li {
+						height: 52px;
+
+						a {
+							color: #CCC;
+							display: block;
+							height: inherit;
+							padding: 5px 30px;
+							position: relative;
+
+							span {
+								display:block;
+							}
+
+							.title {
+								font-size: 14px;
+							}
+							.details {
+								color: #999;
+								font-size: 12px;
+							}
+							.navbarAdminMenuIcon {
+								
+								color: #FFF;
+								font-size: 10px;
+								height: 43px;
+								left: 15px;
+								width: 43px;
+							}
+							.adminMenuRightIcon {
+								position: absolute;
+								top: 10px;
+							}
+							.adminMenuHomeIcon {
+								background-color: #4F5051;
+								font-size: 14px;
+								left: inherit;
+								top: 5px;
+								padding-top: 15px;
+								position: absolute;
+								right: 10px;
+								text-align: center;
+							}
+						}
+						a:focus, a:hover {
+							color: #FFF;
+						    text-decoration: none;
+
+							.adminMenuHomeIcon {
+							    background-color: #5D7D94;
+						    	@include opacity(.6);
+						    }
+						}
+						ul {
+						    background-color: #323232;
+						    margin-top: 5px;
+						    padding: 5px 0;
+						}
+					}
+		    	}
+	    	}
+	    }
+	}
+	.navbarAdmin:hover {
+	  left: 0px;
+	}
+}
+

@@ -1,0 +1,49 @@
+.carousel-caption {
+	@include showguides;
+	bottom: 60px;
+    padding-top: 30px;
+	width: 30%;
+
+	.startDayCount {
+		background-color: $primary-color;
+		padding: 3px 10px;
+		margin: 0 0 3px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+	.streamTitle {
+		@include showguides;
+	}
+	.streamExcerpt {
+		@include showguides;
+	}
+	.streamDate {
+		border-top: 2px solid #FFF;
+	    margin: 0;
+	    @include showguides;
+	}
+
+	h3 {
+		background-color: #F5F;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+	    padding-bottom: 0;
+	}
+}
+
+@media screen and (max-width:900px){
+	.carousel {
+		display: none;
+	}
+}
+
+.carousel-control {
+	@include background(linear-gradient(to bottom right, transparent, transparent)!important);
+    opacity: 1;
+}

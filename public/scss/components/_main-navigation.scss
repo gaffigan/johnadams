@@ -1,0 +1,51 @@
+
+.navbarMain {
+    border-bottom: 1px solid #E5E5E5;
+    left:0;
+	margin-bottom: 0px;
+	min-height: 65px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+
+	@include border-radius-zero;
+	@include opacity(0.9);
+
+	.navbar-nav>li>a {
+	   color: $primary-color !important;
+	}
+
+	.navbar-brand {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.navbar-brand>img {
+	    display: block;
+	    height: 65px;
+	    margin: 0 auto;
+	}
+	.iconLeftContainer {
+		position: absolute;
+		background-color: transparent;
+		display: block;
+		font-size: 20px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		min-height: 50px;
+
+		.navbar-brand > img {
+		    height: 50px;
+		}
+		.iconLeftContainer {
+			display:none;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.columnSys {}
+.largeLeft {
+	.col-md-4:first-child {
+		width:50%;
+	}
+	.col-md-4:nth-child(2), 
+	.col-md-4:last-child {
+		width:25%;
+	}
+}

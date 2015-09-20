@@ -1,0 +1,87 @@
+@mixin btn {
+	// @include font;
+	// @include font-montserrat;
+
+    margin-bottom: 0;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-image: none!important;
+    color: #626262;
+    background-color: #ffffff;
+    text-shadow: none;
+    box-shadow: none;
+    line-height: 21px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    transition: color 0.1s linear 0s,background-color 0.1s linear 0s,opacity 0.2s linear 0s!important;
+    
+	&:hover, 
+	&:focus {}
+}
+
+@mixin btn-alpha {
+	background-color: $alpha-button-fill;
+	border-color: $alpha-button-border;
+	@include border-radius-three;
+	color: $alpha-button-color;
+
+	&:hover, 
+	&:focus {
+		background-color: $alpha-button-border;
+	}
+}
+
+@mixin btn-beta {
+	background-color: $beta-button-fill;
+	border-color: $beta-button-border;
+	@include border-radius-three;
+	color: $beta-button-color;
+
+	&:hover, 
+	&:focus {
+		background-color: $beta-button-hover;
+	}
+}
+
+@mixin btn-charlie {
+	background-color: $beta-button-fill;
+	border-color: $beta-button-border;
+	@include border-radius-three;
+	color: $beta-button-color;
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+
+	&:hover, 
+	&:focus {
+		background-color: $beta-button-border;
+	}
+}
+
+@mixin btn-delta {
+	background-color: $alpha-button-fill;
+	border-color: $alpha-button-border;
+	@include border-left-radius(3px);
+	color: $alpha-button-color;
+	width: 100%;
+
+	&:hover, 
+	&:focus {
+		background-color: $alpha-button-border;
+	}
+}
+
+@mixin btn-falcon {
+	background-color: #d05e27;
+	color: #FFF;
+	font-size: 20px;
+	margin: 10px 0;
+    width: 100%;
+}

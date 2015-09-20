@@ -1,0 +1,76 @@
+
+
+@media screen and (min-width:900px){
+	.streamGroupHeader,
+	.nowStreamingContainer {
+		display: none;
+	}
+}
+@media screen and (max-width:899px){
+	.streamGroupHeader {
+		background-color: #FFF;
+		padding: 10px;
+	}
+	.nowStreamingContainer {
+		padding: 10px;
+
+		.panel {
+			@include border-radius-three;
+
+			.panel-body {
+				padding: 2px;
+
+				a {
+					.streamThumbnailContainer {
+						position: relative;
+
+						.playButton {
+							left: 50%;
+							margin-left: -30px;
+							margin-top: -30px;
+							position: absolute;
+							top: 50%;
+						}
+
+						.streamThumbnail {
+
+						}
+					}
+					.streamStatus {
+						background-color: #2A8EBB;
+						color: #FFF;
+						margin: 2px 0;
+						padding: 4px 0;
+						text-align: center;
+					}
+					.nowplayingStatus {
+						background-color: #2A823F !important;
+					}
+					.streamInfoContainer {
+						padding: 0px 5px;
+
+						h2 {
+							color: #595959;
+							font-size: 20px;
+							margin-top: 5px;
+						}
+						p {
+							color: #595959;
+							font-size: 14px;
+						}
+					}
+				}
+
+				a:hover {
+					text-decoration: none;
+				}
+
+				.eventDateContainer {
+					border-top: 1px solid #CCC;
+					font-size: 10px;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}

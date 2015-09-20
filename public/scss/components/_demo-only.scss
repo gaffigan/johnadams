@@ -1,0 +1,21 @@
+.demoOnly {
+	
+	.jumbotron {
+		background-color: #FFF;
+		border: 1px solid $beta-button-border;
+		margin: 50px auto;
+		width: 640px;
+
+		.userIcon {
+			background-color: $beta-button-fill;
+		    border: 1px solid $beta-button-border;
+		    color: $beta-button-color;
+		    display: block;
+		    height: 100px;
+		    margin: 0 auto;
+		    padding: 10px;
+	        text-align: center;
+		    width: 100px;
+		}
+	}
+}

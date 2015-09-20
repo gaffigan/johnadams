@@ -1,0 +1,290 @@
+.wizardWidget {
+	display: none;
+}
+@media (min-width: 768px) {
+.wizardWidget {
+	display: block;
+	margin: 30px 0;
+	overflow: hidden;
+
+	.wizardBreadCrumbs {
+	    font-size: 11px;
+		list-style-type: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 8px 0;
+	    position: relative;
+
+		li {
+		    color: #aaaaaa;
+			display: inline-block;
+			margin-right: 15px;
+		}
+		li.active {
+			color: #842569;
+			font-weight: bold;
+		}
+
+		.activeIndicator {
+			background-color: #F2F2F2;
+		    border-bottom: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			display: block;
+			height: 10px;
+			position: absolute;
+			top: 26px;
+			width: 10px;
+			z-index: 3;
+
+			@include rotate;
+		}
+
+		.activeStreamInfo {
+			left: 50px;
+		}
+		.activeBckgrndImg {
+			left: 175px;
+		}
+		.activeSchedule {
+			left: 275px;
+		}
+		.activeStreamSource {
+			left: 365px;
+		}
+		.activePreview {
+			left: 455px;
+		}
+		.activeConfirm {
+			left: 528px;
+		}
+	}
+	.wizardPanel {
+		@include border-radius-three;
+
+		h2 {
+			color: #595959;
+			font-size: 20px;
+			margin-bottom: 0;
+			margin-top: 0;
+
+			small {
+				color: #323232;
+				display: block;
+				font-size: 14px;
+				line-height: normal;
+				margin: 5px 0;
+				padding: 5px 0;
+			}
+		}
+		.lead {
+			color: #FFF;
+			font-size: 30px;
+			line-height: 30px;
+		}
+		p {
+			color: #999;
+			font-size: 11px;
+		}
+
+		.col-md-3 {
+			border-right: 1px dotted #CCC;
+		}
+
+		form {
+			.form-group {
+				background-color: #FFF;
+				border: 1px solid rgba(0,0,0,0.07);
+				padding: 5px;
+
+				label {
+					color: #626262;
+					font-size: 11px;
+				    margin-bottom: 0;
+				    padding: 0 5px;
+				    text-transform: uppercase;
+				}
+				.form-control {
+					box-shadow: none;
+					border: none;
+					padding: 5px;
+				}
+			}
+			.fileUpload {
+				border: none;
+				padding: 0;
+	    
+				#fileSelectBackgroundImg {
+					display: none;
+				}
+				.fileUploadButton {
+					@include btn;
+					@include btn-delta;
+				}
+				.form-control {
+					border: 1px solid rgba(0,0,0,0.07);
+					@include border-radius-zero;
+					padding: 20px 5px;
+				}
+			}
+		}
+		.wizardPreviewImageContainer {
+			background-color: #F2F2F2;
+			border: 1px solid #CBCACA;
+			color: #CBCACA;
+			font-size: 10px;
+			padding: 45px;
+			text-align: center;
+		}
+		.wizardButtonContainer {
+		    margin: 15px 0;
+			text-align: right;
+
+			a {
+				@include btn;
+			}
+			.buttonNext {
+				@include btn-alpha;
+			}
+			.buttonPrevious {
+				@include btn-beta;
+			}
+		}
+	}
+	.extendedWizardPanel {
+		background-size: 100%;
+		overflow: hidden;
+		position: relative;
+
+		h2 {
+			color: #FFFFFF;
+
+			small {
+				color: #FFFFFF;
+			}
+		}
+		p {
+			color: #FFFFFF;
+		}
+		.panel-body {
+			position: relative;
+			z-index: 1;
+			.row {
+				.previewDate {
+					background-color: #FFF;
+					border-right: 1px solid #CCCCCC;
+					padding-left: 0px;
+					padding-right: 0px;
+
+					span {
+						color: #686c71;
+						display: block;
+						font-size: 14px;
+						text-align: center;
+					}
+					.titleDate {
+						font-weight: bold;
+						padding-top: 20px;
+					}
+					.dateMonth {}
+					.dateDay {
+						font-size: 70px;
+						line-height: 85px;
+						padding: 0px 0;
+					}
+					.dateYear {
+						color: #b2b2b2;
+					}
+					.dateTime {
+						color: #FFFFFF;
+						padding: 2px 0;
+					}
+					.startTime {
+						background-color: #842569;
+					}
+					.endTime {
+						background-color: #5c3326;
+					}
+					.glyphicon {
+						font-size: 100px;
+						color: #FFF;
+						text-align: center;
+						width: 100%;
+					}
+				}
+			}
+		}
+		.glyphicon {
+			font-size: 100px;
+			color: #FFF;
+			text-align: center;
+			width: 100%;
+		}
+		.transparency {
+			@include transparency;
+		}
+	}
+}
+
+
+#schedule-form {
+	min-height:300px;
+	overflow:hidden;
+	padding:0px;
+	position:relative;
+
+	#form-views {
+		width:auto;
+	}
+}
+
+#form-views.ng-enter,
+#form-views.ng-leave {
+	position:absolute;
+	left:30px;
+	right:30px;
+    transition:0.5s all ease;
+    -moz-transition:0.5s all ease;
+    -webkit-transition:0.5s all ease; 
+}
+
+#form-views.ng-enter            { 
+    -webkit-animation:slideInRight 0.5s both ease;
+    -moz-animation:slideInRight 0.5s both ease;
+    animation:slideInRight 0.5s both ease; 
+}
+
+#form-views.ng-leave            { 
+    -webkit-animation:slideOutLeft 0.5s both ease;
+    -moz-animation:slideOutLeft 0.5s both ease;
+    animation:slideOutLeft 0.5s both ease;   
+}
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-200%); }
+}
+@-moz-keyframes slideOutLeft {  
+    to      { -moz-transform: translateX(-200%); }
+}
+@-webkit-keyframes slideOutLeft {
+    to      { -webkit-transform: translateX(-200%); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(200%); }
+    to      { transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+    from    { -moz-transform:translateX(200%); }
+    to      { -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+    from    { -webkit-transform:translateX(200%); }
+    to      { -webkit-transform: translateX(0); }
+}
+
+
+
+}
+
+
+

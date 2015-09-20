@@ -1,0 +1,88 @@
+<div class="container-fluid containerAdmin">
+
+	<global-nav></global-nav>
+
+	<admin-navbar></admin-navbar>
+
+	<breadcrumbs></breadcrumbs>
+
+	<div class="wizardWidget">
+
+		<ul class="wizardBreadCrumbs">
+		
+		  <li class="active">
+		    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+		    Stream Information
+		  </li>
+		  <li>
+		    <span class="fa fa-file-image-o" aria-hidden="true"></span>
+		    Background Image
+		  </li>
+		  <li>
+		    <span class="fa fa-calendar" aria-hidden="true"></span>
+		    Schedule
+		  </li>
+		  <li>
+		    <span class="fa fa-video-camera" aria-hidden="true"></span>
+		    Stream Source
+		  </li>
+		  <li>
+		    <span class="fa fa-eye" aria-hidden="true"></span>
+		    Preview
+		  </li>
+		  <li>
+		    <span class="fa fa-check" aria-hidden="true"></span>
+		    Confirm
+		  </li>
+		  
+		  <div class="activeIndicator activeStreamInfo"></div>
+		</ul>
+
+        <form id="schedule-form" ng-submit="processForm()">
+
+            <!-- Nested state view injected here. -->
+            <div id="form-views" ui-view>
+            	<div class="panel panel-default wizardPanel">
+				  <div class="panel-body">
+				    <div class="row">
+				      <div class="col-md-3">
+				        <h2 class="text-capitalize">Stream Information <small>Information that informs the user why this information is important and where it will be used and/or displayed.</small></h2>
+				        <p>Information that informs the user why this information is important and where it will be used and/or displayed.</p>
+
+				      </div>
+				      <div class="col-md-6">
+				        <form>
+
+				          <div class="form-group">
+				            <label for="">Name Of Stream</label>
+				            <input type="type" class="form-control" id="" placeholder="">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="">Description Of Stream</label>
+				            <textarea class="form-control" rows="3"></textarea>
+				          </div>
+
+				        </form>
+				      </div>
+				      <div class="col-md-3"><!-- col 3 --></div>
+				    </div>
+
+				    <div class="wizardButtonContainer">
+				    	<!-- <a ui-sref="" class="btn btn-default">Previous</a> -->
+				    	<a ui-sref="desk-schedule.admin-schedule-bckgrnd-img" class="btn btn-primary buttonNext">Next</a>
+				    </div>
+
+				  </div>
+				</div>
+            </div>
+
+        </form>
+		
+	</div>
+
+	<mobile-schedule></mobile-schedule>
+
+	<mobile-footer></mobile-footer>
+
+</div>

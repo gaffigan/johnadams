@@ -1,0 +1,25 @@
+.containerAdmin {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 65px;
+
+    .breadcrumb {
+	    border-bottom: 1px solid $beta-button-border;
+    }
+}
+
+@media (min-width: 768px) {
+	.containerAdmin {
+	    padding-left: 75px !important;
+	    padding-right: 25px !important;
+	    padding-top: 70px;
+
+	    .breadcrumb {
+		    border-bottom: 1px solid $beta-button-border;
+	    }
+
+	    .navbar-header {
+	        margin-left: 60px;
+	    }
+	}
+}

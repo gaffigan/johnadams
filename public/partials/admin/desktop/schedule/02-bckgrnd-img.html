@@ -1,0 +1,54 @@
+<div class="panel panel-default wizardPanel">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-3">
+        <h2 class="text-capitalize">Background Image <small>Information that informs the user why this information is important and where it will be used and/or displayed.</small></h2>
+        <p>Information that informs the user why this information is important and where it will be used and/or displayed.</p>
+
+      </div>
+      <div class="col-md-6">
+        <form>
+
+          <div class="form-group">
+            <select class="form-control">
+              <option>Select A Background Image</option>
+              <option>The Airport Image</option>
+              <option>animage.png</option>
+              <option>The Image We Agreed On</option>
+              <option>perfect-image.jpg</option>
+            </select>
+          </div>
+
+          <div class="form-group fileUpload">
+            <input type="file" id="fileSelectBackgroundImg">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default fileUploadButton" type="button">Browse</button>
+              </span>
+              <input type="text" class="form-control" placeholder="">
+            </div><!-- /input-group -->
+            <script type="text/javascript">
+              // $('#fileSelectBackgroundImg').trigger('click');
+              $(".fileUploadButton").click(function() {
+                  $('#fileSelectBackgroundImg').click();
+              });
+            </script>
+          </div>
+
+        </form>
+      </div>
+      <div class="col-md-3">
+        <div class="wizardPreviewImageContainer" style="">Select An Image Or Upload An Image</div>
+      </div>
+    </div>
+
+    <div class="wizardButtonContainer">
+	    <a ui-sref="desk-schedule" class="btn btn-default buttonPrevious">Previous</a>
+    	<a ui-sref="desk-schedule.admin-schedule-schedule" class="btn btn-primary buttonNext">Next</a>
+    </div>
+
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+
+.mobileList {
+	@include mobile-list;
+
+	li {
+		background-color: transparent;
+		overflow: hidden;
+
+		a {
+			background-color: transparent;
+			color: #231f20;
+			display:block;
+			height: 100px;
+			min-height: 100px;
+			overflow: hidden;
+		    padding: 24px 0 0 106px;
+			position: relative;
+			text-decoration: none;
+
+			h2 {
+				font-size: 23px;
+				font-weight: normal;
+				margin: 0;
+				padding: 0;
+			}
+			.thumbnailImage {
+				height: auto;
+				left: 18px;
+				position: absolute;
+				top: 26px;
+				width: 78px;
+			}
+			.icon {
+				@include icon-button;
+			}
+			.right-arrow {
+				background-color: transparent;
+				height: 64px;
+				font-size: 26px;
+				padding: 12px 0 0 0;
+				position: absolute;
+				right: 18px;
+				text-align: center;
+				top: 18px;
+				width: 64px;
+			}
+		}
+	}
+}
+
+.mobileList.noBorder {
+	border: none;
+} 

@@ -1,0 +1,121 @@
+@mixin form-group-default {
+	background-color: #fff;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 2px;
+    padding-top: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    overflow: hidden;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+@mixin form-group-disabled {
+    background: #f8f8f8;
+    color: rgba(98,98,98,0.23);
+}
+
+@mixin form-group-default-label {
+    margin: 0;
+    display: block;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+@mixin form-group-default-form-control {
+    border: none;
+    height: 25px;
+    min-height: 25px;
+    padding: 0;
+    margin-top: -4px;
+    background: none;
+    font-family: Arial,sans-serif;
+    -webkit-appearance: none;
+    color: #2c2c2c;
+    outline: 0;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    box-shadow: none;
+    -webkit-border-radius: 2px;
+}
+
+@mixin form-group-default-form-control-textarea {
+    height: 200px !important;
+}
+
+@mixin mobile-list {
+	background-color: #fff;
+	border-color: #ddd;
+	border-style: solid;
+	border-width: 1px;
+	color: #444;
+	display: block;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 2;
+}
+
+@mixin icon-button {
+	background-color: transparent;
+	font-size: 34px;
+    height: 64px;
+    left: 18px;
+    padding: 5px 0 0 0;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    width: 64px;
+}
+
+@mixin form-input {
+	height: $form-input-height;
+}
+
+@mixin border-radius-zero($radius:0px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin border-radius-three($radius:3px) {
+	-webkit-border-radius: $radius !important;
+	-moz-border-radius: $radius !important;
+	border-radius: $radius !important;
+}
+
+@mixin rotate($rotate: $default-rotate, $perspective: false, $only3d: false) {
+	$trans: rotate($rotate);
+
+	@if $perspective {
+		$trans: perspective($perspective) $trans;
+	}
+	
+	@include transform($trans, $only3d);
+}
+
+@mixin showguides {
+	background-color: #FFC600;
+	/* background-color: transparent; */
+	@include opacity(.85);
+}
+
+@mixin transparency {
+	background-color: #686c71;
+	height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+	@include opacity(.45);
+}
+
+@mixin primary_link {
+	color: $primary-color;
+}
