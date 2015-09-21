@@ -6,7 +6,7 @@
 	app.directive('adminNavbar', function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'partials/admin-navbar.html'
+			templateUrl: 'partials/admin/desktop/admin-navbar.html'
 		};
 	});
 
@@ -14,7 +14,7 @@
 	app.directive('breadcrumbs', function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'partials/breadcrumbs.html'
+			templateUrl: 'partials/_global/desktop/breadcrumbs.html'
 		};
 	});
 
@@ -22,7 +22,7 @@
 	app.directive('globalNav', function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'partials/global-nav.html'
+			templateUrl: 'partials/_global/global-nav.html'
 		};
 	});
 
@@ -30,7 +30,7 @@
 	app.directive('carousel', function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'partials/widget-carousel.html'
+			templateUrl: 'partials/admin/desktop/widget-carousel.html'
 		};
 	});
 

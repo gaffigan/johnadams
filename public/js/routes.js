@@ -12,12 +12,12 @@
 
 		.state('admin-dashboard', {
 			url: '/admin-dashboard',
-			templateUrl: 'views/admin-dashboard.html'
+			templateUrl: 'views/admin/desktop/admin-dashboard.html'
 		})
 
 		.state('desk-schedule', {
 			url: '/admin-desk-schedule',
-			templateUrl: 'views/admin-desk-schedule.html'
+			templateUrl: 'views/admin/desktop/admin-desk-schedule.html'
 		})
 
 		//DESKTOP SCHEDULE STATES
@@ -64,7 +64,7 @@
 
 		.state('mobile-schedule', {
 			url: '/admin-mobi-schedule',
-			templateUrl: 'views/admin-mobile-schedule.html'
+			templateUrl: 'views/admin/mobile/admin-mobile-schedule.html'
 		})
 
 		//MOBILE SCHEDULE STATES
@@ -111,7 +111,7 @@
 
 		.state('mobile-settings', {
 			url: '/admin-mobile-settings',
-			templateUrl: 'views/admin-mobile-settings.html'
+			templateUrl: 'views/admin/mobile/admin-mobile-settings.html'
 		})
 
 		//MOBILE SETTINGS STATES
