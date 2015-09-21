@@ -3,7 +3,7 @@
   <ul class="row">
     <li class="col-xs-4 col-sm-4">
 
-      <a ui-sref="admin-dashboard" class=""active>
+      <a ui-sref="admin-dashboard" class="active">
         <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
         <span class="glyphicon-class">Dashboard</span>
       </a>
@@ -34,6 +34,11 @@
 (function(){
 
   $('footer a').click(function(){
+
+    var colLength = $('footer ul li[class*=col-]').width();
+
+    console.log("Column Length: " + colLength + "\n" + "Next Line: " );
+
     $('footer a').removeClass('active');
     $(this).addClass('active');
   });

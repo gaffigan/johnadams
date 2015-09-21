@@ -162,11 +162,16 @@
     left: 0px;
   }
 }
-/* line 3, ../scss/components/_column-system.scss */
+/* line 1, ../scss/components/_column-system.scss */
+.columnSys {
+  display: none;
+}
+
+/* line 5, ../scss/components/_column-system.scss */
 .largeLeft .col-md-4:first-child {
   width: 50%;
 }
-/* line 7, ../scss/components/_column-system.scss */
+/* line 9, ../scss/components/_column-system.scss */
 .largeLeft .col-md-4:nth-child(2),
 .largeLeft .col-md-4:last-child {
   width: 25%;
@@ -210,7 +215,12 @@ footer ul {
   margin-bottom: 0px;
   padding-left: 0;
 }
-/* line 17, ../scss/components/_footer.scss */
+/* line 16, ../scss/components/_footer.scss */
+footer ul li {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* line 20, ../scss/components/_footer.scss */
 footer ul li a {
   background-color: transparent;
   color: #595959;
@@ -219,19 +229,19 @@ footer ul li a {
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 25, ../scss/components/_footer.scss */
+/* line 28, ../scss/components/_footer.scss */
 footer ul li a span[class*="glyphicon"] {
   display: block;
 }
-/* line 28, ../scss/components/_footer.scss */
+/* line 31, ../scss/components/_footer.scss */
 footer ul li a .glyphicon {
   font-size: 14px;
 }
-/* line 31, ../scss/components/_footer.scss */
+/* line 34, ../scss/components/_footer.scss */
 footer ul li a .glyphicon-class {
   font-size: 11px;
 }
-/* line 34, ../scss/components/_footer.scss */
+/* line 37, ../scss/components/_footer.scss */
 footer ul li a .activeIndicator {
   border-bottom: 1px solid #2a8ebb;
   border-top: 1px solid #999999;
@@ -240,16 +250,17 @@ footer ul li a .activeIndicator {
   width: 100%;
   top: -1px;
 }
-/* line 43, ../scss/components/_footer.scss */
+/* line 46, ../scss/components/_footer.scss */
 footer ul li a:hover {
   text-decoration: none;
 }
-/* line 46, ../scss/components/_footer.scss */
+/* line 49, ../scss/components/_footer.scss */
 footer ul li .active {
-  background-color: #E5E5E5;
+  background-color: transparent;
   color: #2a8ebb;
+  border-top: 1px solid #2a8ebb;
 }
-/* line 52, ../scss/components/_footer.scss */
+/* line 56, ../scss/components/_footer.scss */
 footer ul .col-md-6 {
   float: left;
   padding-left: 0px;
@@ -258,7 +269,7 @@ footer ul .col-md-6 {
 }
 
 @media (min-width: 768px) {
-  /* line 63, ../scss/components/_footer.scss */
+  /* line 67, ../scss/components/_footer.scss */
   footer {
     display: none;
   }
@@ -1044,11 +1055,12 @@ body {
 /* line 1, ../scss/components/_quick-widget.scss */
 .panelQuickWidget {
   background-color: transparent;
+  display: none;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 5, ../scss/components/_quick-widget.scss */
+/* line 6, ../scss/components/_quick-widget.scss */
 .panelQuickWidget .panel-heading {
   background-image: none;
   background-color: transparent;
@@ -1059,16 +1071,16 @@ body {
   top: 0;
   left: 0;
 }
-/* line 15, ../scss/components/_quick-widget.scss */
+/* line 16, ../scss/components/_quick-widget.scss */
 .panelQuickWidget .panel-body {
   padding: 0;
 }
-/* line 18, ../scss/components/_quick-widget.scss */
+/* line 19, ../scss/components/_quick-widget.scss */
 .panelQuickWidget .panel-body .carousel {
   height: 325px;
   position: relative;
 }
-/* line 23, ../scss/components/_quick-widget.scss */
+/* line 24, ../scss/components/_quick-widget.scss */
 .panelQuickWidget .panel-body .carousel .item img {
   height: 325px;
 }
@@ -1500,88 +1512,6 @@ body {
     }
 }
 }
-/*
-Vertical Slide Up
-Include this mixin and the element will slide up and stop 
-
-*/
-/* line 9, ../scss/modules/animations/_vertical-slide.scss */
-.transition-example {
-  width: 40px;
-  height: 40px;
-  background: red;
-  margin: 20px;
-}
-
-/* line 16, ../scss/modules/animations/_vertical-slide.scss */
-#width {
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-}
-
-/* line 20, ../scss/modules/animations/_vertical-slide.scss */
-#width:hover {
-  width: 80px;
-}
-
-/* line 24, ../scss/modules/animations/_vertical-slide.scss */
-#width-duration {
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: 2s;
-  -moz-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  transition-duration: 2s;
-}
-
-/* line 29, ../scss/modules/animations/_vertical-slide.scss */
-#width-duration:hover {
-  width: 80px;
-}
-
-/* line 34, ../scss/modules/animations/_vertical-slide.scss */
-#width-duration-easein {
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: 2s;
-  -moz-transition-duration: 2s;
-  -o-transition-duration: 2s;
-  transition-duration: 2s;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  width: 800px;
-}
-
-/* line 41, ../scss/modules/animations/_vertical-slide.scss */
-#width-duration-easein:hover {
-  width: 80px;
-}
-
-/* line 46, ../scss/modules/animations/_vertical-slide.scss */
-#width-delay {
-  -webkit-transition-property: width;
-  -moz-transition-property: width;
-  -o-transition-property: width;
-  transition-property: width;
-  -webkit-transition-delay: 2s;
-  -moz-transition-delay: 2s;
-  -o-transition-delay: 2s;
-  transition-delay: 2s;
-}
-
-/* line 51, ../scss/modules/animations/_vertical-slide.scss */
-#width-delay:hover {
-  width: 80px;
-}
-
 /* FONT PATH
  * -------------------------- */
 @font-face {

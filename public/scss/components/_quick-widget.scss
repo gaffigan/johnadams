@@ -1,5 +1,6 @@
 .panelQuickWidget {
 	background-color: transparent;
+	display: none;
 	@include border-radius-zero;
 
 	.panel-heading {
