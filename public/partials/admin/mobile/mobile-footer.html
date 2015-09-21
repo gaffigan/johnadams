@@ -2,23 +2,41 @@
 
   <ul class="row">
     <li class="col-xs-4 col-sm-4">
-      <a ui-sref="admin-dashboard">
+
+      <a ui-sref="admin-dashboard" class=""active>
         <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
         <span class="glyphicon-class">Dashboard</span>
       </a>
+
     </li>
     <li class="col-xs-4 col-sm-4">
-      <a ui-sref="mobile-schedule">
+
+      <a ui-sref="mobile-schedule" class="">
         <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
         <span class="glyphicon-class">Schedule</span>
       </a>
+
     </li>
     <li class="col-xs-4 col-sm-4">
-      <a ui-sref="mobile-settings" class="active">
+
+      <a ui-sref="mobile-settings" class="">
         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
         <span class="glyphicon-class">Setting</span>
       </a>
+
     </li>
   </ul>
 
 </footer>
+
+
+<script type="text/javascript">
+(function(){
+
+  $('footer a').click(function(){
+    $('footer a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+})();
+</script>
