@@ -7,7 +7,7 @@
 
 		.state('/', {
 			url: '/',
-			templateUrl: 'views/user-select.html'
+			templateUrl: 'views/demo-only-select-user.html'
 		})
 
 		.state('admin-dashboard', {
