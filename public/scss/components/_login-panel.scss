@@ -6,7 +6,7 @@
 		margin-top: 150px;
 
 		.modal-content {
-			@include border-radius-three;
+			border-radius: $border-radius-base-mod;
 
 			.modal-body {
 			    padding: 40px;
@@ -15,7 +15,7 @@
 			    	position: relative;
 			    	
 				    input {
-					    @include border-radius-three;
+					    border-radius: $border-radius-base-mod;
 					    @include form-input;
 				    }
 
